@@ -3,105 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Social Media Links</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <title>Adom Kiki — Follow the Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-container">
-      <div class="header-banner"></div>
 
-      <div class="main-content">
-        <div class="profile-section">
-          <img src="Adom_Kiki.jpeg" alt="Adom Kiki" class="profile-img" />
+    <!-- Ambient noise grain overlay -->
+    <div class="grain"></div>
+
+    <!-- Floating music notes background -->
+    <div class="notes-bg" aria-hidden="true">
+      <span>♩</span><span>♪</span><span>♫</span><span>♬</span>
+      <span>♩</span><span>♪</span><span>♫</span><span>♬</span>
+      <span>♩</span><span>♪</span>
+    </div>
+
+    <div class="page-container">
+
+      <!-- Vinyl record hero section -->
+      <div class="hero">
+        <div class="vinyl-wrap">
+          <div class="vinyl">
+            <div class="vinyl-grooves"></div>
+            <div class="vinyl-label">
+              <img src="Adom_Kiki.jpeg" alt="Adom Kiki" class="profile-img" />
+            </div>
+            <div class="vinyl-shine"></div>
+          </div>
+          <!-- Spinning arm -->
+          <div class="tonearm">
+            <div class="tonearm-head"></div>
+          </div>
         </div>
 
-        <h1 class="page-title">
-          FOLLOW ADOM KIKI ON THESE<br />SOCIAL MEDIA PLATFORM
-        </h1>
-
-        <div class="links-wrapper">
-          <a
-            href="https://youtu.be/0e3nVaaj984?si=aZnzNqkG5otCfDRR"
-            class="link-card"
-          >
-            <div class="icon-circle youtube-bg">
-              <i class="fa-brands fa-youtube"></i>
-            </div>
-            <div class="text-content">
-              <span class="platform-name">YouTube</span>
-              <span class="action-text"
-                >Click on this link to follow us on YOUTUBE</span
-              >
-            </div>
-            <i class="fa-solid fa-chevron-right chevron"></i>
-          </a>
-
-          <a
-            href="https://www.facebook.com/share/r/16yKaVS6F4/?mibextid=wwXIfr"
-            class="link-card"
-          >
-            <div class="icon-circle facebook-bg">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="text-content">
-              <span class="platform-name">Facebook</span>
-              <span class="action-text"
-                >Click on this link to follow us on FACEBOOK</span
-              >
-            </div>
-            <i class="fa-solid fa-chevron-right chevron"></i>
-          </a>
-
-          <a
-            href="https://www.instagram.com/reel/DYaIBvyMuV_/?igsh=M21lMXR1eXpmOHVk"
-            class="link-card"
-          >
-            <div class="icon-circle instagram-bg">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="text-content">
-              <span class="platform-name">Instagram</span>
-              <span class="action-text"
-                >Click on this link to follow us on INSTAGRAM</span
-              >
-            </div>
-            <i class="fa-solid fa-chevron-right chevron"></i>
-          </a>
-
-          <a
-            href="https://chat.whatsapp.com/GwfDMm0iWdqBauoVRA50Z9"
-            class="link-card"
-          >
-            <div class="icon-circle whatsapp-bg">
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-            <div class="text-content">
-              <span class="platform-name">WhatsApp</span>
-              <span class="action-text"
-                >Click on this link to follow us on WHATSAPP</span
-              >
-            </div>
-            <i class="fa-solid fa-chevron-right chevron"></i>
-          </a>
-
-          <a href="https://vt.tiktok.com/ZSxBuTKLr/" class="link-card">
-            <div class="icon-circle tiktok-bg">
-              <i class="fa-brands fa-tiktok"></i>
-            </div>
-            <div class="text-content">
-              <span class="platform-name">TikTok</span>
-              <span class="action-text"
-                >Click on this link to follow us on TIKTOK</span
-              >
-            </div>
-            <i class="fa-solid fa-chevron-right chevron"></i>
-          </a>
+        <div class="hero-text">
+          <p class="eyebrow">🎵 Now Playing</p>
+          <h1 class="artist-name">Adom<br /><em>Kiki</em></h1>
+          <p class="tagline">Hit follow — the music never stops.</p>
         </div>
       </div>
+
+      <!-- EQ bars decoration -->
+      <div class="eq-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <p class="section-label">— Stream &amp; Follow —</p>
+
+      <!-- Links -->
+      <div class="links-wrapper">
+
+        <a href="https://youtu.be/0e3nVaaj984?si=aZnzNqkG5otCfDRR" class="link-card youtube" style="--delay:0.05s">
+          <div class="card-glow"></div>
+          <div class="icon-wrap">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="text-content">
+            <span class="platform-name">YouTube</span>
+            <span class="action-text">Watch &amp; Subscribe</span>
+          </div>
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </a>
+
+        <a href="https://www.facebook.com/share/r/16yKaVS6F4/?mibextid=wwXIfr" class="link-card facebook" style="--delay:0.1s">
+          <div class="card-glow"></div>
+          <div class="icon-wrap">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="text-content">
+            <span class="platform-name">Facebook</span>
+            <span class="action-text">Like &amp; Follow</span>
+          </div>
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </a>
+
+        <a href="https://www.instagram.com/reel/DYaIBvyMuV_/?igsh=M21lMXR1eXpmOHVk" class="link-card instagram" style="--delay:0.15s">
+          <div class="card-glow"></div>
+          <div class="icon-wrap">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="text-content">
+            <span class="platform-name">Instagram</span>
+            <span class="action-text">Follow for Reels &amp; Stories</span>
+          </div>
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </a>
+
+        <a href="https://chat.whatsapp.com/GwfDMm0iWdqBauoVRA50Z9" class="link-card whatsapp" style="--delay:0.2s">
+          <div class="card-glow"></div>
+          <div class="icon-wrap">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="text-content">
+            <span class="platform-name">WhatsApp</span>
+            <span class="action-text">Join the Community</span>
+          </div>
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </a>
+
+        <a href="https://vt.tiktok.com/ZSxBuTKLr/" class="link-card tiktok" style="--delay:0.25s">
+          <div class="card-glow"></div>
+          <div class="icon-wrap">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="text-content">
+            <span class="platform-name">TikTok</span>
+            <span class="action-text">Dance to the Beat</span>
+          </div>
+          <div class="play-btn"><i class="fa-solid fa-play"></i></div>
+        </a>
+
+      </div>
+
+      <footer class="footer">
+        <div class="waveform" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p>© 2025 Adom Kiki · All rights reserved</p>
+      </footer>
+
     </div>
+
   </body>
 </html>
