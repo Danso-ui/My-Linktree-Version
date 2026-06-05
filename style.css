@@ -1,0 +1,143 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5; /* Slightly darker background outside the main frame */
+}
+
+/* Page Container - scales up to 1024px but works beautifully on mobile */
+.page-container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+}
+
+/* Top Red Banner */
+.header-banner {
+    background-color: #b90e0a; /* Deep Red */
+    height: 200px; /* Taller to balance the larger image */
+    width: 100%;
+}
+
+/* Main Content constraints */
+.main-content {
+    padding: 0 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Image Setup - Creates the perfect 50/50 overlap */
+.profile-section {
+    margin-top: -100px; /* Pulls exactly half the image up into the red banner */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px; /* Softly rounded corners */
+    border: 6px solid #ffffff; /* Thick white border from the image */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* Soft drop shadow */
+    
+    /* THESE TWO LINES FIX THE 1024x1536 SIZING ISSUE */
+    object-fit: cover; 
+    object-position: top center; 
+}
+
+/* Typography */
+.page-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+/* Links Section */
+.links-wrapper {
+    width: 100%;
+    max-width: 600px; /* Keeps buttons from getting absurdly wide on big screens */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Individual Link Cards */
+.link-card {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 18px;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.link-card:active {
+    background-color: #f5f5f5;
+    transform: scale(0.98);
+}
+
+/* Colored Icon Circles */
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 18px;
+}
+
+.icon-circle i {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+/* Platform Brand Colors */
+.youtube-bg { background-color: #ff0000; }
+.facebook-bg { background-color: #1877f2; }
+.instagram-bg { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+.whatsapp-bg { background-color: #25d366; }
+.tiktok-bg { background-color: #000000; }
+
+/* Text Inside Buttons */
+.text-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.platform-name {
+    color: #000000;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.action-text {
+    color: #555555;
+    font-size: 14px;
+}
+
+/* Right Chevron Icon */
+.chevron {
+    color: #333333;
+    font-size: 18px;
+    margin-left: 10px;
+}
