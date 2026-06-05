@@ -65,8 +65,7 @@
       <div class="links-wrapper">
         <a
           href="https://www.youtube.com/@adomkiki8979"
-          class="link-card youtube"
-          style="--delay: 0.05s"
+          class="link-card youtube delay-05"
         >
           <div class="card-glow"></div>
           <div class="icon-wrap">
@@ -81,8 +80,7 @@
 
         <a
           href="https://www.facebook.com/share/17f1qsQ6aL/"
-          class="link-card facebook"
-          style="--delay: 0.1s"
+          class="link-card facebook delay-10"
         >
           <div class="card-glow"></div>
           <div class="icon-wrap">
@@ -97,8 +95,7 @@
 
         <a
           href="https://www.instagram.com/adomkiki?igsh=MXBzZTM4ZzJydHJkZA=="
-          class="link-card instagram"
-          style="--delay: 0.15s"
+          class="link-card instagram delay-15"
         >
           <div class="card-glow"></div>
           <div class="icon-wrap">
@@ -113,8 +110,7 @@
 
         <a
           href="https://chat.whatsapp.com/GwfDMm0iWdqBauoVRA50Z9"
-          class="link-card whatsapp"
-          style="--delay: 0.2s"
+          class="link-card whatsapp delay-20"
         >
           <div class="card-glow"></div>
           <div class="icon-wrap">
@@ -129,8 +125,7 @@
 
         <a
           href="https://www.tiktok.com/@adom_kiki?_r=1&_d=f26ifk9ghmc1dl&sec_uid=MS4wLjABAAAA8504NMuuSXzF9X5WjhESvxxZ2nDJt1WyfNmjJfGaZbYwdPNFSsFwTMnqRJJM8mXo&share_author_id=7010043971343336453&sharer_language=en&source=h5_m&u_code=dkk58d6e7dl7aa&timestamp=1780674401&user_id=7010043971343336453&sec_user_id=MS4wLjABAAAA8504NMuuSXzF9X5WjhESvxxZ2nDJt1WyfNmjJfGaZbYwdPNFSsFwTMnqRJJM8mXo&item_author_type=1&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7642489892924376849&share_link_id=3530aca9-61d6-4aa0-9cf3-5edc8826cf75&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb7360&social_share_type=5&enable_checksum=1"
-          class="link-card tiktok"
-          style="--delay: 0.25s"
+          class="link-card tiktok delay-25"
         >
           <div class="card-glow"></div>
           <div class="icon-wrap">
@@ -150,8 +145,12 @@
           <span></span><span></span><span></span><span></span><span></span>
           <span></span><span></span><span></span><span></span><span></span>
         </div>
-        <p>© 2025 Adom Kiki · All rights reserved</p>
+        <p>&copy; <span id="year"></span> Adom Kiki. All rights reserved.</p>
       </footer>
     </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
